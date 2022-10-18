@@ -1,5 +1,5 @@
 module "dev_route53_1" {
-  source  = "app.terraform.io/akshai183akshai/akshai183-route53/aws"
+  source  = "app.terraform.io/Akshai183/akshai183-route53/aws"
   version = "1.0.0"
   domainname = "akshaik8sb15.xyz"
   nlb_id     = module.dev_elb_1.elb_id

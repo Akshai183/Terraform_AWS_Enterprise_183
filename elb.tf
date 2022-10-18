@@ -1,5 +1,5 @@
 module "dev_elb_1" {
-  source  = "app.terraform.io/akshai183akshai/akshai183-elb/aws"
+  source  = "app.terraform.io/Akshai183/akshai183-elb/aws"
   version = "1.0.0"
   environment     = module.dev_vpc_1.environment
   nlbname         = "dev-nlb"

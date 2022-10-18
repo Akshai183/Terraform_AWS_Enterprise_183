@@ -1,5 +1,5 @@
 module "dev_compute_1" {
-  source  = "app.terraform.io/akshai183akshai/akshai183-compute/aws"
+  source  = "app.terraform.io/Akshai183/akshai183-compute/aws"
   version = "1.0.0"
   environment = module.dev_vpc_1.environment
   amis = {

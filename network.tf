@@ -1,5 +1,5 @@
 module "dev_vpc_1" {
-  source  = "app.terraform.io/akshai183akshai/akshai183-network/aws"
+  source  = "app.terraform.io/Akshai183/akshai183-network/aws"
   version = "1.0.0"
   vpc_cidr           = "10.90.0.0/16"
   vpc_name           = "dev_vpc_1"
@@ -12,14 +12,14 @@ module "dev_vpc_1" {
 }
 
 module "dev_natgw_1" {
-  source  = "app.terraform.io/akshai183akshai/akshai183-nat/aws"
+  source  = "app.terraform.io/Akshai183/akshai183-nat/aws"
   version = "1.0.0"
   public_subnet_id = module.dev_vpc_1.public_subnets_id_1
   vpc_name         = module.dev_vpc_1.vpc_name
 }
 
 module "dev_sg_1" {
-  source  = "app.terraform.io/akshai183akshai/akshai183-sg/aws"
+  source  = "app.terraform.io/Akshai183/akshai183-sg/aws"
   version = "1.0.0"
   vpc_name      = module.dev_vpc_1.vpc_name
   vpc_id        = module.dev_vpc_1.vpc_id
