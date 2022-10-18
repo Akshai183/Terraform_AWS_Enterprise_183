@@ -3,5 +3,5 @@ module "dev_iam_1" {
   version = "1.0.0"
   environment         = module.dev_vpc_1.environment
   rolename            = "prabhavathi"
-  instanceprofilename = "akshai2"
+  instanceprofilename = "akshai"
 }
